@@ -1,0 +1,20 @@
+<input  class = "Management" style = "  margin-left: 23px" type="button" onclick = "Run()" value="Run">
+<input  class = "Management"  type="button" onclick = "Stop()" value="Stop">
+<input  class = "Management" type="button" onclick = "Step()" value="Step">
+<input  class = "Management" type="button" onclick = "deleteClickedElement()" value="Delete clicked element">
+<% actions = ["home()", "forward()", "back()", "turnLeft()", "turnRight()", "hideTurtle()", "showTurtle()",  
+	"drawSquare()", "penOn()", "penOff()", "clean()"] %>
+<div id = "Panel" draggable = "false" ondrop="Drop.call(this, event)" ondragstart="DragStart.call(this, event)"  ondragover = "DragOver.call(this, event)">
+	<p>Drop commands here</p>
+</div>
+
+<% actions.each { |action| %>
+	<div class="Commands" draggable="false" ondragstart="DragStart.call(this, event)" ondragover = "DragOver.call(this, event)">
+		<span onclick="changeClickElement.call(this, event)" draggable="true" ondragstart="DragStart.call(this, event)" ondragover = "DragOver.call(this, event)" ondrop="DropInPanel.call(this, event)" ondragend="Dragend.call(this, event)"> <%= action %> </span>
+	</div>
+<% } %>
+
+
+
+
+

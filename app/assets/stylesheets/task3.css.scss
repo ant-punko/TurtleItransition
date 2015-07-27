@@ -1,0 +1,34 @@
+// Place all the styles related to the Task3 controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.left{
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.Commands{
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+  margin-left: 14px;
+  margin-top: 10px;
+  border-radius: 6px 6px;
+  width: 100px;
+  height: 20px;
+}
+
+#Panel{
+  width: 1247px;
+  height: 120px;
+  margin-left: 23px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 7px 7px;
+  background-color: black
+}
+
+.Management {
+  margin-top: 10px;
+}
